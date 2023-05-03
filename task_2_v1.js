@@ -1,6 +1,6 @@
-const a = 3;
-const b = 4;
-const c = 5;
+const a = 10;
+const b = 6;
+const c = 11;
 
 function calcSumSqMaxNumb(f1,f2) {
     return (f1**2 + f2**2);
@@ -33,3 +33,5 @@ let maxTwo = getMaxTwo (a,b,c);
 let result =  calcSumSqMaxNumb(maxOne,maxTwo);
 
 console.log (result);
+
+//Переписать так чтобы была сортировка и брались макс и 2е число

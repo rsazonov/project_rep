@@ -1,23 +1,17 @@
 
-let numbArray = [10,6,11,5,24];
+let numbArray = [10,6,11,5,7];
 
 function calcSumSqMaxNumb(f1,f2) {
     return (f1**2 + f2**2);
   }
 
-function compareNumeric(a, b) {
-    if (a > b) return 1;
-    if (a == b) return 0;
-    if (a < b) return -1;
-  }
+let compareNumeric = numbArray.sort((a, b) => a - b);
 
-numbArray.sort(compareNumeric);
+let maxOne = Math.max(...compareNumeric);
 
-let maxOne = Math.max(...numbArray);
-
-for (let i=0; i<numbArray.length; i++) {
-    if (numbArray[i] === maxOne) {
-        maxTwo = numbArray[i-1];
+for (let i=0; i<compareNumeric.length; i++) {
+    if (compareNumeric[i] === maxOne) {
+        maxTwo = compareNumeric[i-1];
     } else {
         i++;
     }

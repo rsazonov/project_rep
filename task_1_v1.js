@@ -15,3 +15,4 @@ for (let i = 0; i < numbArray.length; i++) {
     break;
 }
 // Переключиться на циклы (while, for)
+//Переписать через функцию 

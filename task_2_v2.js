@@ -6,23 +6,14 @@ function calcSumSqMaxNumb(f1,f2) {
     return (f1**2 + f2**2);
   }
 
-function createArray (a1,a2,a3) {
-    let newArray
-    return newArray = [a1,a2,a3];
-}
+let numbArray = [a,b,c];
 
-function compareNumeric(a, b) {
-    if (a > b) return 1;
-    if (a == b) return 0;
-    if (a < b) return -1;
-  }
+let compareNumeric = numbArray.sort((a, b) => b - a);
+console.log (compareNumeric);
 
-let numbArray = createArray (a,b,c);
-
-numbArray.sort(compareNumeric);
-console.log(numbArray);
-
-let result =  calcSumSqMaxNumb(numbArray[2],numbArray[1]); 
+let result =  calcSumSqMaxNumb(numbArray[0],numbArray[1]); 
 console.log (result);
 
 // //Переписать так чтобы была сортировка и брались макс и 2е число
+// Сделать стрелочную функцию compareNumeric в sort
+// сортировка наоборот

@@ -12,12 +12,11 @@ let maxOne = Math.max(...compareNumeric);
 for (let i=0; i<compareNumeric.length; i++) {
     if (compareNumeric[i] === maxOne) {
         maxTwo = compareNumeric[i-1];
-    } else {
-        i++;
-    }
+    } 
 }
 
 let result =  calcSumSqMaxNumb(maxOne,maxTwo); 
 console.log (result);
 
 // Переписать так чтобы была сортировка и брались макс и 2е число
+// Удалить максимальное и найти 2-е максимальное

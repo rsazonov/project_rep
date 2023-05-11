@@ -2,20 +2,51 @@ const assert = require('assert');
 const getArrSumEqGoalNumb = require('../task_1_final');
 
 describe('getArrSumEqGoalNumb', function() {
-  it('should return an array of two indices whose values sum to the goal number', function() {
+  it('Verify the returned array contains two indices whose values sum is equal to the goal number', function() {
     let numbArray = [3, 2, 3, 5];
     let goalNumber = 7;
     let result = getArrSumEqGoalNumb(numbArray, goalNumber);
-    // assert.isArray(result);
-    // assert.lengthOf(result, 2);
-    // assert.deepEqual(result, [0, 3]);
+    let expected = [1, 3];
+    assert.deepEqual(result,expected)
   });
 
-  it('[N] should return an empty array if no two numbers in the array sum to the goal number', function() {
-    let numbArray = [1, 2, 3, 4];
+  it('[N] Verify the returned array is empty if there are no two values in the array sum is equal to the goal number', function() {
+    let numbArray = [1, 2, 3, 3];
     let goalNumber = 7;
     let result = getArrSumEqGoalNumb(numbArray, goalNumber);
-    // assert.isArray(result);
-    assert.lengthOf(result, 0);
+    let expected = [];
+    assert.deepEqual(result,expected)
+  });
+
+  it('Verify the returned array contains two indices whose values sum is equal to the goal number (the array contains negative values)', function() {
+    let numbArray = [3, -2, 4, -5];
+    let goalNumber = 7;
+    let result = getArrSumEqGoalNumb(numbArray, goalNumber);
+    let expected = [0, 2];
+    assert.deepEqual(result,expected)
+  });
+
+  it('Verify the returned array contains two indices whose values sum is equal to the goal number', function() {
+    let numbArray = [3, 2, 3, 5];
+    let goalNumber = 7;
+    let result = getArrSumEqGoalNumb(numbArray, goalNumber);
+    let expected = [1, 3];
+    assert.deepEqual(result,expected)
+  });
+
+  it('[N] Verify the returned array is empty if the initial array is empty', function() {
+    let numbArray = [];
+    let goalNumber = 7;
+    let result = getArrSumEqGoalNumb(numbArray, goalNumber);
+    let expected = [];
+    assert.deepEqual(result,expected)
+  });
+
+  it('[N] Verify the returned array is empty if the goal number is empty', function() {
+    let numbArray = [3, 2, 3, 5];
+    let goalNumber;
+    let result = getArrSumEqGoalNumb(numbArray, goalNumber);
+    let expected = [];
+    assert.deepEqual(result,expected)
   });
 });

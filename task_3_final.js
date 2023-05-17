@@ -1,25 +1,20 @@
-const numb = 658;
-//const numb = 12345;
+const numb = 0.1;
 
 function sumNumbArray (numb) {
 
-   let sum = numb.toString()
+   let sum = Math.trunc(numb).toString()
     .split('')
     .map(str => parseInt(str))
     .reduce((acc, val) => acc + val, 0);
     
     if (sum >= 10) {
-        sumNumbArray(sum);
+        return(sumNumbArray(sum));
     } else {
-        console.log(sum);
         return sum;
     }
 }
 
 sumNumbArray(numb);
+console.log(sumNumbArray(numb));
 
-//Сделать так чтобы не было зависимо от длины массива
-//подсказка - использовать остаток от деления (%)
-
-//переделать под рекурсию
-//сдулать функицю, которая принимает число, которая один раз делает все операции, а после условие (если сум Ю= 10), то вызывать функцию или возвращать значение
+module.exports = sumNumbArray;

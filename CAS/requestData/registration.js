@@ -10,23 +10,7 @@ const defaultPayload =  {
         "topics": [],
         "consents": [
             {
-              "id": "38607540-df4f-4033-b972-40e5edecce85",
-              "accepted": true
-            },
-            {
-              "id": "2f35e9d8-21f6-4992-8337-cdc14df37053",
-              "accepted": true
-            },
-            {
-              "id": "15aff1b0-ce9c-4fe3-8e14-f4b6194b2311",
-              "accepted": true
-            },
-            {
-              "id": "9f1054cc-98d4-4d8d-a812-8d01438fb07a",
-              "accepted": true
-            },
-            {
-              "id": "feb0bfa6-17ca-42a1-bb6c-eef1e3362245",
+              "id": "eecd2730-9c7c-48fe-9098-b58b7a10d83d",
               "accepted": true
             }
           ],

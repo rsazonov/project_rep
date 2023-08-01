@@ -1,0 +1,11 @@
+const casDevUrl = 'https://apim-msfwex17-23-domainapim-dev.azure-api.net/des-services/cas/v1';
+const casQAUrl = 'https://apim-msfwex17-23-domainapim-qa.azure-api.net/des-services/cas/v1';
+const casStgUrl = 'https://apim-msfwex17-23-domainapim-stg.azure-api.net/des-services/cas/v1';
+const casPrdUrl = 'https://apim-msfwex18-23-domainapim.azure-api.net/des-services/cas/v1';
+
+  module.exports = {
+    casDevUrl: casDevUrl,
+    casQAUrl: casQAUrl,
+    casStgUrl: casStgUrl,
+    casPrdUrl: casPrdUrl,
+  };

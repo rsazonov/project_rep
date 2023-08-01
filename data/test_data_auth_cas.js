@@ -1,7 +1,7 @@
 module.exports = [
     {
       testCaseName: "should return a response with status 200 for valid email and password",
-      email: "rostyslav.sazonov+fe2_qa_51@gmail.com",
+      email: "rostyslav.sazonov+ploom_validation_stage_78@gmail.com",
       password: "MLb3950FAtU4!",
       expected: 200
     },

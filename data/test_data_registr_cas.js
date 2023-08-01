@@ -2,7 +2,7 @@ module.exports = [
     {
       testCaseName: "should register a new user",
       newPayload: {
-        "email": "rostyslav.sazonov+fe1_auto_new_" + `${Math.trunc((Math.random() * 1e6))}` + "@gmail.com",
+        "email": "rostyslav.sazonov+stg_auto_new_" + `${new Date().getTime()}` + "@gmail.com",
       },
       expected: 200
     },

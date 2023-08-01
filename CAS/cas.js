@@ -1,12 +1,12 @@
 const axiosWrapper = require('../Library/axios_wrapper');
 const defaultPayload = require('../CAS/requestData/registration');
 const defaultAgeVerificationPayload = require('../AVP/requestData/age_verification');
-const loginURL = 'https://apim-msfwex17-23-domainapim-qa.azure-api.net/des-services/cas/v1/login';
-const registerURL = 'https://apim-msfwex17-23-domainapim-qa.azure-api.net/des-services/cas/v1/register';
-const tenantToken = '7e703561de83b8193d2dd22a7084f39dbfbc26c15f7a994007af4da4d1970e25';
+const loginURL = 'https://apim-msfwex17-23-domainapim-stg.azure-api.net/des-services/cas/v1/login';
+const registerURL = 'https://apim-msfwex17-23-domainapim-stg.azure-api.net/des-services/cas/v1/register';
+// const tenantToken = '64fae1fc79ff46baa54a5eca79971c8f400baba964cdb09937d9b34e21c6afa4';
 
 //Login User
-async function login(email, password) {
+async function login(email, password, tenantToken) {
   const {data, status} = await axiosWrapper.post(loginURL, 
           {
             email: email,
@@ -27,7 +27,7 @@ async function login(email, password) {
   
   //Register User
   
-  async function userRegistr(newPayload) {
+  async function userRegistr(newPayload, tenantToken) {
   
     // const ageVerificationRequest = { ...defaultAgeVerificationPayload, ...newPayload };
   

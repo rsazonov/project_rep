@@ -1,7 +1,7 @@
 const axiosWrapper = require('../Library/axios_wrapper');
 const defaultAgeVerificationPayload = require('../AVP/requestData/age_verification');
-const verifyURL = 'https://apim-msfwex17-23-domainapim-qa.azure-api.net/des-services/avp/v1/verify';
-const tenantToken = '7e703561de83b8193d2dd22a7084f39dbfbc26c15f7a994007af4da4d1970e22';
+const verifyURL = 'https://apim-msfwex17-23-domainapim-stg.azure-api.net/des-services/avp/v1/verify';
+const tenantToken = '64fae1fc79ff46baa54a5eca79971c8f400baba964cdb09937d9b34e21c6afa4';
 
 async function ageVerification(ageVerificationRequest) {    
   
@@ -24,5 +24,3 @@ async function ageVerification(ageVerificationRequest) {
 // })();
 
 module.exports = ageVerification;
-
-//область видимости и замыкание
